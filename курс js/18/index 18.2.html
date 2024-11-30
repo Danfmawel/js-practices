@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        #progress-bar-container {
+            width: 500px;
+            height: 20px;
+            background-color: #ddd;
+            border-radius: 10px;
+            margin: 20px auto;
+            overflow: hidden;
+            position: relative;
+        }
+        #progress-bar {
+            width: 0;
+            height: 100%;
+            background-color: #6a5acd;
+            transition: width linear;
+        }
+        #timer {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Анимация Progress Bar</h1>
+    <div id="progress-bar-container">
+        <div id="progress-bar"></div>
+    </div>
+    <div id="timer">0 с</div>
+
+    <script src="index 18.2.js"></script>
+</body>
+</html>

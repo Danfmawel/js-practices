@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список фильмов</title>
+    <link rel="stylesheet" href="style 14.1.css">
+</head>
+<body>
+    <h1>Управление списком фильмов</h1>
+    <form id="movieForm">
+        <label>Название: <input type="text" id="title" required></label><br>
+        <label>Жанр: <input type="text" id="genre" required></label><br>
+        <label>Год: <input type="number" id="year" min="1900" max="2100" required></label><br>
+        <label><input type="checkbox" id="watched"> Успели посмотреть?</label><br>
+        <button type="submit">Добавить</button>
+        <button type="button" id="cancelEdit" style="display: none;">Отменить редактирование</button>
+    </form>
+    <br>
+    <select id="sortCriteria">
+        <option value="title">По названию</option>
+        <option value="genre">По жанру</option>
+        <option value="year">По году</option>
+    </select>
+    <button id="sortButton">Сортировать</button>
+    <br><br>
+    <table id="movieTable">
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>Жанр</th>
+                <th>Год</th>
+                <th>Успели посмотреть?</th>
+                <th>Действие</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="index 14.1.js"></script>
+</body>
+</html>

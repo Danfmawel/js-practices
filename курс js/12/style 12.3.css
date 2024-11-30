@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo-container {
+    text-align: center;
+    width: 300px;
+}
+
+input {
+    padding: 10px;
+    font-size: 14px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#promoMessage {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}

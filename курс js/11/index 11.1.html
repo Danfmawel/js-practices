@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма опроса</title>
+    <link rel="stylesheet" href="style 11.1.css">
+</head>
+<body>
+    <h1>Форма опроса</h1>
+    <form id="surveyForm">
+        <!-- Имя пользователя -->
+        <label for="name">Имя пользователя:</label>
+        <input type="text" id="name" name="name" required>
+        <span class="error" id="nameError"></span>
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span class="error" id="emailError"></span>
+        <br><br>
+
+        <!-- Пол -->
+        <label>Пол:</label>
+        <input type="radio" id="male" name="gender" value="Мужской" required>
+        <label for="male">Мужской</label>
+        <input type="radio" id="female" name="gender" value="Женский">
+        <label for="female">Женский</label>
+        <br><br>
+
+        <!-- Оценка сервиса -->
+        <label for="rating">Оценка сервиса:</label>
+        <input type="range" id="rating" name="rating" min="1" max="10" value="5">
+        <span id="ratingValue">5</span>
+        <br><br>
+
+        <!-- Интересы -->
+        <label>Интересы:</label>
+        <input type="checkbox" id="sport" name="interests" value="Спорт">
+        <label for="sport">Спорт</label>
+        <input type="checkbox" id="music" name="interests" value="Музыка">
+        <label for="music">Музыка</label>
+        <input type="checkbox" id="movies" name="interests" value="Кино">
+        <label for="movies">Кино</label>
+        <br><br>
+
+        <!-- Дополнительные комментарии -->
+        <label for="comments">Дополнительные комментарии:</label>
+        <textarea id="comments" name="comments"></textarea>
+        <br><br>
+
+        <!-- Кнопка отправки -->
+        <button type="submit">Отправить</button>
+    </form>
+
+    <!-- Результаты -->
+    <h2>Результаты опроса:</h2>
+    <div id="result"></div>
+
+    <script src="index 11.1.js"></script>
+</body>
+</html>
