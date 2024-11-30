@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.delivery-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.delivery-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.delivery-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.delivery-card.delivery {
+    border-left: 5px solid blue;
+}
+
+.delivery-card.delivered {
+    border-left: 5px solid blue;
+    background-color: #f1fdf4;
+}
+
+.delivery-card.canceled {
+    border-left: 5px solid blue;
+    background-color: #fff0f0;
+}
+
+.delivery-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.delivery-card p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.delivery-card button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    border: 1px solid #007BFF;
+    background-color: #f8f9fa;
+    color: #007BFF;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.delivery-card button:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+button.calculate-distance {
+    margin: 20px auto;
+    display: block;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button.calculate-distance:hover {
+    background-color: #0056b3;
+}
+
+#total-distance {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Модальное окно */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 300px;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal form label {
+    font-size: 0.9em;
+    color: #333;
+}
+
+.modal form input,
+.modal form select {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal form button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.modal form button:hover {
+    background-color: #0056b3;
+}

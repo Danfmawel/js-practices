@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery List</title>
+    <link rel="stylesheet" href="style 19.2.css">
+</head>
+<body>
+    <h1>Список доставок</h1>
+    <div class="delivery-container" id="delivery-container"></div>
+    <button class="calculate-distance">Общее расстояние</button>
+    <p id="total-distance">Общее расстояние: 0 км</p>
+
+    <!-- Модальное окно для редактирования -->
+    <div class="modal" id="edit-modal">
+        <form id="edit-form">
+            <h2>Изменить</h2>
+            <label>
+                Имя:
+                <input type="text" id="edit-name" required>
+            </label>
+            <label>
+                Адрес:
+                <input type="text" id="edit-address" required>
+            </label>
+            <label>
+                Расстояние:
+                <input type="number" id="edit-distance" required>
+            </label>
+            <label>
+                Статус:
+                <select id="edit-status">
+                    <option value="delivery">Доставляется</option>
+                    <option value="delivered">Доставлен</option>
+                    <option value="canceled">Отменён</option>
+                </select>
+            </label>
+            <button type="submit">Сохранить</button>
+        </form>
+    </div>
+
+    <script src="index 19.2.js"></script>
+</body>
+</html>
